@@ -10,6 +10,7 @@ body {
     padding-top: 0px;
     padding-bottom: 0px;
     border: 1px red solid;
+    background-color: #4d78e8;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -65,7 +66,8 @@ body {
 }
 
 .container {
-    border: 1px blue solid;
+    border: 1px red solid;
+    background-color: #fff;
 }
 
 /* Responsive: Portrait tablets and up */
