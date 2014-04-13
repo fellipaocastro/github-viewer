@@ -6,9 +6,14 @@
 }
 
 /* Space out content a bit */
+html, body {
+    height: 100%;
+}
+
 body {
     padding-top: 0px;
     padding-bottom: 0px;
+    font-family: arial,helvetica,freesans,sans-serif;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -65,8 +70,30 @@ body {
 
 .container {
     border: 1px red solid;
-    background-color: #fff;
     position: relative;
+    height: 100%;
+    padding: 0;
+}
+
+#left_container, #right_container {
+    height: 100%;
+}
+
+#left_container {
+    background-color: #4d78e8;
+    color: #fff;
+    width: 35%;
+    left: 0;
+    float: left;
+    border: 1px yellow solid;
+}
+
+#right_container {
+    background-color: #fff;
+    width: 65%;
+    right: 0;
+    float: right;
+    border: 1px blue solid;
 }
 
 #left, #right {
@@ -89,7 +116,7 @@ body {
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
     .container {
-        max-width: 730px;
+        max-width: 642px;
     }
 
     /* Remove the padding we set earlier */
