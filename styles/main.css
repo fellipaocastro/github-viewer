@@ -120,6 +120,30 @@ body {
     font-size: 60px;
 }
 
+#menu {
+    margin-top: 10px;
+    list-style: none;
+    font-size: 25px;
+    margin-right: 20px;
+}
+
+.clear {
+    clear: both;
+}
+
+#menu li {
+    text-align: right;
+    margin-top: 5px;
+}
+
+#menu li a {
+    color: #fff;
+}
+
+#menu li a:hover,a:focus {
+    text-decoration: none;
+}
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
     .container {
