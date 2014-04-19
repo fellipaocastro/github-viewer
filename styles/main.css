@@ -146,7 +146,7 @@ body {
 }
 
 .active:before {
-    border-color: rgba(0, 0, 0, 0) #FFFFFF;
+    border-color: rgba(0, 0, 0, 0) #fff;
     border-width: 9px 9px 9px 0;
     bottom: auto;
     left: 208px;
@@ -159,6 +159,30 @@ body {
 .active {
     position: relative;
     margin-left: 14px;
+}
+
+#stars {
+    float: left;
+}
+
+#forks {
+    margin-left: 80px;
+}
+
+#contribs {
+    float: right;
+    margin-right: 35px;
+}
+
+#right_container > .header {
+    margin-top: 8px;
+    margin-left: 18px;
+    border: none;
+}
+
+#right_container > .header > p {
+    font-size: 23px;
+    color: #9f9f9f;
 }
 
 /* Responsive: Portrait tablets and up */
