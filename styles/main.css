@@ -24,11 +24,6 @@ body {
     padding-right: 15px;
 }
 
-/* Custom page header */
-.header {
-    border-bottom: 1px solid #e5e5e5;
-}
-
 /* Make the masthead heading the same height as the navigation */
 .header h3 {
     margin-top: 0;
@@ -69,7 +64,6 @@ body {
 }
 
 .container {
-    border: 1px red solid;
     position: relative;
     height: 100%;
     padding: 0;
@@ -85,7 +79,6 @@ body {
     width: 35%;
     left: 0;
     float: left;
-    border: 1px yellow solid;
 }
 
 #right_container {
@@ -93,7 +86,6 @@ body {
     width: 65%;
     right: 0;
     float: right;
-    border: 1px blue solid;
 }
 
 #left, #right {
@@ -140,7 +132,7 @@ body {
     color: #fff;
 }
 
-#menu li a:hover,a:focus {
+#menu li a:hover,a:focus,#mais {
     text-decoration: none;
     outline: 0;
 }
@@ -158,7 +150,7 @@ body {
 
 .active {
     position: relative;
-    margin-left: 14px;
+    margin-left: 15px;
 }
 
 #stars {
@@ -166,7 +158,7 @@ body {
 }
 
 #forks {
-    margin-left: 80px;
+    margin-left: 98px;
 }
 
 #contribs {
@@ -176,7 +168,6 @@ body {
 #right_container > .header {
     margin-left: 15px;
     margin-right: 15px;
-    border: 1px red solid;
     height: 65px;
 }
 
@@ -186,15 +177,71 @@ body {
 }
 
 #commits {
-    margin-top: 15px;
-    border: 1px red solid;
-    margin-left: 15px;
+    margin-top: 22px;
+    margin-left: 30px;
     margin-right: 15px;
 }
 
 .panel {
     border-radius: 0;
     margin-bottom: 10px;
+}
+
+.commit-date {
+    float: right;
+}
+
+.grey-box {
+    float: left;
+    height: 40px;
+    background-color: #666;
+    width: 40px;
+    border-radius: 3px;
+    margin-top: 6px;
+}
+
+.panel-body {
+    padding: 4px 12px 5px 6px;
+    color: #9F9F9F;
+}
+
+.commit-main {
+    width: 300px;
+    float: left;
+    margin-left: 20px;
+}
+
+.commit-title {
+    font-weight: bold;
+    color: #666;
+    font-size: 20px;
+}
+
+.commit-date {
+    font-size: 12px;
+    margin-top: 6px;
+}
+
+.commit-author {
+    font-size: 16px;
+}
+
+#carregar {
+    background-color: #ccc;
+    color: #fff;
+    text-align: center;
+    padding: 6px;
+    margin-right: 15px;
+    margin-left: 30px;
+    font-size: 12px;
+}
+
+.navbar-text {
+    margin-right: 0;
+}
+
+.header {
+    margin-top: 8px;
 }
 
 /* Responsive: Portrait tablets and up */
