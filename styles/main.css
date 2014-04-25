@@ -159,20 +159,21 @@ body {
 }
 
 #forks {
-    margin-left: 98px;
+    margin-left: 200px;
+    position: absolute;
 }
 
 #contribs {
     float: right;
 }
 
-#right_container > .header {
+#right_container > #repo_details > .header {
     margin-left: 15px;
     margin-right: 15px;
     height: 65px;
 }
 
-#right_container > .header > p {
+#right_container > #repo_details > .header > p {
     font-size: 23px;
     color: #9f9f9f;
 }
@@ -243,6 +244,10 @@ body {
 
 .header {
     margin-top: 8px;
+}
+
+.off {
+    display: none; 
 }
 
 /* Responsive: Portrait tablets and up */
