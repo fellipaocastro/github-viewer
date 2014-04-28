@@ -6,7 +6,7 @@ Primeiro desafio
 Usage
 -----
 
-In order to better see it locally, make use of a web server:
+In order to better see it locally, make use of a web server in the projects's root path:
 
 .. code-block:: bash
 
