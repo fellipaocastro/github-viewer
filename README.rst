@@ -6,13 +6,13 @@ Primeiro desafio
 Usage
 -----
 
-In order to better see it locally, make use of a web server in the projects's root path:
+In order to locally run it, it's recommended to make use of a web server in the project's root path.
+
+Here are some examples of built-in web servers:
 
 .. code-block:: bash
 
     $ python -m SimpleHTTPServer
-
-or:
 
 .. code-block:: bash
 
