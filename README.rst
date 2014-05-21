@@ -1,7 +1,7 @@
-primeiro-desafio
+github-viewer
 ================
 
-Primeiro desafio
+GitHub Viewer
 
 Usage
 -----
