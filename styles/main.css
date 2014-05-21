@@ -129,7 +129,7 @@ body {
     color: #fff;
 }
 
-#menu li a:hover,a:focus,#mais {
+#menu li a:hover,a:focus,#more {
     text-decoration: none;
     outline: 0;
 }
