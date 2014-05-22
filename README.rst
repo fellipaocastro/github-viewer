@@ -17,3 +17,16 @@ Here are some examples of built-in web servers:
 .. code-block:: bash
 
     $ php -S localhost:8000
+
+Deployment
+----------
+
+.. code-block:: bash
+
+    $ ./deploy.sh
+
+Domains
+-------
+
+- `<http://github-viewer.fellipecastro.com/>`_
+- `<http://fellipecastro.github.io/primeiro-desafio/>`_
