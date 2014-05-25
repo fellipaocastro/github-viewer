@@ -6,7 +6,7 @@ GitHub Viewer
 Usage
 -----
 
-In order to locally run it, it's recommended to make use of a web server in the project's root path.
+In order to locally make the most out of it, it's recommended to make use of a web server in the project's root path.
 
 Here are some examples of built-in web servers:
 
@@ -29,4 +29,4 @@ Domains
 -------
 
 - `<http://github-viewer.fellipecastro.com/>`_
-- `<http://fellipecastro.github.io/primeiro-desafio/>`_
+- `<http://fellipecastro.github.io/github-viewer/>`_
