@@ -25,8 +25,8 @@ Deployment
 
     $ ./deploy.sh
 
-Domains
--------
+URL's
+-----
 
 - `<http://github-viewer.fellipecastro.com/>`_
 - `<http://fellipecastro.github.io/github-viewer/>`_
