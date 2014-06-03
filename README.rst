@@ -24,9 +24,3 @@ Deployment
 .. code-block:: bash
 
     $ ./deploy.sh
-
-URL's
------
-
-- `<http://github-viewer.fellipecastro.com/>`_
-- `<http://fellipecastro.github.io/github-viewer/>`_
