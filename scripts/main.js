@@ -1,13 +1,13 @@
 "use strict";
 
 $( document ).ready( function() {
-    var GITHUB_API = 'https://api.github.com/';
-    var GITHUB_USERNAME = 'fellipecastro';
-    var PER_PAGE = 20;
+    var GITHUB_API = 'https://api.github.com/',
+        GITHUB_USERNAME = 'fellipecastro',
+        PER_PAGE = 20;
 
-    var hash = window.location.hash;
-    var more = $( '#more' );
-    var currentProject;
+    var hash = window.location.hash.split('#')[1],
+        more = $( '#more' ),
+        currentProject;
 
     $.getJSON( GITHUB_API + 'users/' + GITHUB_USERNAME + '/repos', function( repositories ) {
         repositories.sort( function( a, b ) {
@@ -27,8 +27,7 @@ $( document ).ready( function() {
         $( '#right_container' ).height( $( '#left_container' ).height() );
 
         if ( hash ) {
-            // Not working. Gotta check the reason why.
-            $( hash ).trigger( 'click' );
+            $( '[id="' + hash + '"]' ).trigger( 'click' );
         }
     });
 
@@ -79,13 +78,13 @@ $( document ).ready( function() {
     }
 
     $( window ).hashchange( function() {
-        hash = window.location.hash;
+        hash = window.location.hash.split('#')[1],
 
         $( '#menu > li' ).removeClass( 'active' );
 
-        $( hash ).parent().addClass( 'active' );
+        $( '[id="' + hash + '"]' ).parent().addClass( 'active' );
 
-        $.getJSON( GITHUB_API + 'repos/' + GITHUB_USERNAME + '/' + $( hash ).text(), function( repository ) {
+        $.getJSON( GITHUB_API + 'repos/' + GITHUB_USERNAME + '/' + $( '[id="' + hash + '"]' ).text(), function( repository ) {
             currentProject = repository.name;
 
             $( '#stars' ).html( 'stars ' + repository.stargazers_count );
