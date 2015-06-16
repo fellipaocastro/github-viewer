@@ -5,7 +5,9 @@ $( document ).ready( function() {
         GITHUB_USERNAME = 'fellipecastro',
         PER_PAGE = 20;
 
-    var hash = window.location.hash.split('#')[1],
+    var getProjectFromHash = new Function( "return window.location.hash.split('#')[1];" );
+
+    var project = getProjectFromHash(),
         more = $( '#more' ),
         currentProject;
 
@@ -26,8 +28,8 @@ $( document ).ready( function() {
 
         $( '#right_container' ).height( $( '#left_container' ).height() );
 
-        if ( hash ) {
-            $( '[id="' + hash + '"]' ).trigger( 'click' );
+        if ( project ) {
+            $( '[id="' + project + '"]' ).trigger( 'click' );
         }
     });
 
@@ -75,16 +77,16 @@ $( document ).ready( function() {
                 $( '#commits' ).html( items.join( '' ) );
             }
         });
-    }
+    };
 
     $( window ).hashchange( function() {
-        hash = window.location.hash.split('#')[1],
+        project = getProjectFromHash(),
 
         $( '#menu > li' ).removeClass( 'active' );
 
-        $( '[id="' + hash + '"]' ).parent().addClass( 'active' );
+        $( '[id="' + project + '"]' ).parent().addClass( 'active' );
 
-        $.getJSON( GITHUB_API + 'repos/' + GITHUB_USERNAME + '/' + $( '[id="' + hash + '"]' ).text(), function( repository ) {
+        $.getJSON( GITHUB_API + 'repos/' + GITHUB_USERNAME + '/' + $( '[id="' + project + '"]' ).text(), function( repository ) {
             currentProject = repository.name;
 
             $( '#stars' ).html( 'stars ' + repository.stargazers_count );
